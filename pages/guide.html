@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Guide - DisFrame Bot</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://fav.farm/🤖" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/index.html" class="logo">DisFrame</a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/guide.html">Guide</a></li>
+                <li><a href="https://discord.gg/YOUR_INVITE_CODE" class="nav-icon" title="Join DisFrame Discord"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Hosting Guide</h1>
+            <p>Run your own DisFrame bot instance</p>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="container">
+                <h2>Get Started with DisFrame</h2>
+                <p>Follow these steps to host your own Python-based Discord bot.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>1. Prerequisites</h3>
+                        <p>Install <a href="https://www.python.org/downloads/">Python 3.8+</a> and <a href="https://git-scm.com/">Git</a>.</p>
+                    </div>
+                    <div class="card">
+                        <h3>2. Download</h3>
+                        <p>Download DisFrame from <a href="https://github.com/sircryptic/disframe/archive/refs/heads/main.zip">GitHub</a>.</p>
+                    </div>
+                    <div class="card">
+                        <h3>3. Setup</h3>
+                        <p>Unzip, open a terminal in the folder, and run:<br><code>pip install -r requirements.txt</code></p>
+                    </div>
+                    <div class="card">
+                        <h3>4. Configure</h3>
+                        <p>Create <code>config.json</code> with your bot token from the <a href="https://discord.com/developers/applications">Discord Developer Portal</a>:<br><code>{"token": "YOUR_BOT_TOKEN"}</code></p>
+                    </div>
+                    <div class="card">
+                        <h3>5. Launch</h3>
+                        <p>Run the bot:<br><code>python main.py</code></p>
+                    </div>
+                    <div class="card">
+                        <h3>6. Customize</h3>
+                        <p>Add cogs to <code>cmds/</code>. Use <code>load</code>, <code>unload</code>, or <code>reload</code> in Discord.</p>
+                    </div>
+                    <div class="card">
+                        <h3>7. Host 24/7</h3>
+                        <p>Use a VPS or <a href="https://replit.com/">Replit</a> for persistent hosting.</p>
+                    </div>
+                </div>
+                <a href="/index.html" class="btn btn-primary">Back to Home</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Powered by <a href="https://github.com/sircryptic/disframe">DisFrame</a> © 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
