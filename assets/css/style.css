@@ -66,7 +66,7 @@ nav .logo:hover {
 
 /* Hamburger Menu */
 .nav-toggle {
-    display: none; /* Hidden by default on desktop */
+    display: none; /* Hidden on desktop */
 }
 
 .nav-toggle-label {
@@ -128,23 +128,12 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+a:hover {
     color: #5865f2;
 }
 
-nav ul li a:visited {
-    color: #8b9bff;
-}
-
-.nav-icon img {
-    width: 24px;
-    height: 24px;
-    filter: invert(1);
-    transition: transform 0.3s ease;
-}
-
-.nav-icon:hover img {
-    transform: scale(1.1);
+a:visited {
+    color: #99aab5;
 }
 
 /* Container */
@@ -255,7 +244,44 @@ header p {
     border-radius: 25px;
     transition: all 0.3s ease;
     margin: 0.5rem;
-    min-width: 120px; /* Ensure touch-friendly size */
+    min-width: 120px; /* Touch-friendly */
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #5865f2, #7b89ff);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #4752c4, #5865f2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(88, 101, 242, 0.6);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #5865f2;
+    border: 2px solid #5865f2;
+}
+
+.btn-secondary:hover {
+    background: #5865f2;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
+}
+
+/* Nav Icon */
+.nav-icon img {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.nav-icon:hover img {
+    transform: scale(1.1);
 }
 
 /* Footer */
@@ -323,6 +349,10 @@ footer a:hover {
     }
 
     /* Header */
+    header {
+        padding: 2rem 0;
+    }
+
     header h1 {
         font-size: 2rem;
     }
@@ -332,6 +362,10 @@ footer a:hover {
     }
 
     /* Hero and Content */
+    .hero, .content {
+        padding: 3rem 0;
+    }
+
     .hero h2, .content h2 {
         font-size: 1.8rem;
     }
@@ -349,7 +383,6 @@ footer a:hover {
 
     .card {
         padding: 1.5rem;
-        max-width: 100%;
     }
 
     .card h3 {
@@ -377,16 +410,8 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
-    header {
-        padding: 2rem 0;
-    }
-
     header h1 {
         font-size: 1.8rem;
-    }
-
-    .hero, .content {
-        padding: 3rem 0;
     }
 
     .hero h2, .content h2 {
