@@ -20,25 +20,29 @@
 <body>
     <nav>
         <div class="container">
-            <a href="/DisWeb/index.html" class="logo">DisFrame</a>
+            <a href="/DisWeb/index.html" class="logo">Disframe</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
             <ul>
                 <li><a href="/DisWeb/index.html">Home</a></li>
                 <li><a href="/DisWeb/pages/about.html">About</a></li>
                 <li><a href="/DisWeb/pages/guide.html">Guide</a></li>
-                <li><a href="https://discord.gg/48JH3UkerX" class="nav-icon" title="Join DisFrame Discord"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord"></a></li>
+                <li><a href="https://discord.gg/48JH3UkerX" class="nav-icon" title="Join Disframe Discord"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord"></a></li>
             </ul>
         </div>
     </nav>
     <header>
         <div class="container">
-            <h1>DisFrame</h1>
-            <p>A modular Discord bot framework by SirCryptic</p>
+            <h1>Disframe Bot</h1>
+            <p>A modular Discord bot framework by sircryptic</p>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container">
-                <h2>Welcome to DisFrame</h2>
+                <h2>Welcome to Disframe</h2>
                 <p>A flexible Python bot built with discord.py, featuring modular cogs, robust moderation, and multi-guild support.</p>
                 <div class="card-grid card-grid-top">
                     <div class="card">
@@ -49,7 +53,7 @@
                     <div class="card">
                         <h3>Explore Cogs</h3>
                         <p>Browse or contribute to our community cogs repo.</p>
-                        <a href="https://github.com/sircryptic/DisFrame-cogs" class="btn btn-secondary">Visit Cogs Repo</a>
+                        <a href="https://github.com/sircryptic/disframe-cogs" class="btn btn-secondary">Visit Cogs Repo</a>
                     </div>
                 </div>
                 <div class="card-grid card-grid-bottom">
@@ -65,8 +69,16 @@
     </main>
     <footer>
         <div class="container">
-            <p>Powered by <a href="https://github.com/sircryptic/disframe">DisFrame</a> © 2025</p>
+            <p>Powered by <a href="https://github.com/sircryptic/disframe">Disframe</a> © 2025</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.getElementById('nav-toggle');
+            toggle.addEventListener('change', () => {
+                document.querySelector('nav ul').style.transition = 'max-height 0.3s ease';
+            });
+        });
+    </script>
 </body>
 </html>
