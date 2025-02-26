@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - DisFrame Bot</title>
-    <meta property="og:title" content="About DisFrame Bot" />
-    <meta property="og:description" content="Discover DisFrame, a modular Python Discord bot framework by SirCryptic, featuring robust moderation, engaging features, and more." />
+    <title>Hosting Guide - DisFrame Bot</title>
+    <meta property="og:title" content="Hosting Guide - DisFrame Bot" />
+    <meta property="og:description" content="A step-by-step guide to hosting your own DisFrame Discord bot, created by SirCryptic." />
     <meta property="og:image" content="https://repository-images.githubusercontent.com/922656232/2b3449ac-728f-4725-9a5c-31d18276abf0" />
-    <meta property="og:url" content="https://sircryptic.github.io/DisWeb/pages/about.html" />
+    <meta property="og:url" content="https://sircryptic.github.io/DisWeb/pages/guide.html" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="About DisFrame Bot" />
-    <meta name="twitter:description" content="Discover DisFrame, a modular Python Discord bot framework by SirCryptic, featuring robust moderation, engaging features, and more." />
+    <meta name="twitter:title" content="Hosting Guide - DisFrame Bot" />
+    <meta name="twitter:description" content="A step-by-step guide to hosting your own DisFrame Discord bot, created by SirCryptic." />
     <meta name="twitter:image" content="https://repository-images.githubusercontent.com/922656232/2b3449ac-728f-4725-9a5c-31d18276abf0" />
     <link rel="stylesheet" href="/DisWeb/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -35,40 +35,47 @@
     </nav>
     <header>
         <div class="container">
-            <h1>About DisFrame</h1>
-            <p>A powerful framework for crafting custom Discord bots</p>
+            <h1>Hosting Guide</h1>
+            <p>Host your own DisFrame bot instance</p>
         </div>
     </header>
     <main>
         <section class="content">
             <div class="container">
-                <h2>What is DisFrame?</h2>
-                <p>DisFrame is an extensible Discord bot framework built with Python and <a href="https://discordpy.readthedocs.io/">discord.py</a>, created by SirCryptic. It offers a modular architecture that empowers users to tailor bot functionality to their needs, from advanced moderation to interactive community features.</p>
-                <p>Explore and contribute to our <a href="https://github.com/sircryptic/DisFrame-cogs">community cogs repository</a> to enhance DisFrame with your own creations!</p>
+                <h2>Self-Hosting DisFrame</h2>
+                <p>Follow these steps to set up and run your own DisFrame Discord bot locally or on a server.</p>
                 <div class="card-grid">
                     <div class="card">
-                        <h3>Modular Design</h3>
-                        <p>Add or modify commands effortlessly with Python cogs in the <code>cmds/</code> directory.</p>
+                        <h3>1. Prerequisites</h3>
+                        <p>Install <a href="https://www.python.org/downloads/">Python 3.8+</a> and <a href="https://git-scm.com/">Git</a> on your system.</p>
                     </div>
                     <div class="card">
-                        <h3>Role-Based Access</h3>
-                        <p>Granular permissions for owners, devs, mods, subscribers, and beyond.</p>
+                        <h3>2. Clone the Repository</h3>
+                        <p>Clone the DisFrame source code from <a href="https://github.com/sircryptic/disframe">GitHub</a> to your machine.</p>
                     </div>
                     <div class="card">
-                        <h3>Moderation Tools</h3>
-                        <p>Robust features like kick, ban, mute, warn, auto-moderation, and guild setup.</p>
+                        <h3>3. Install Dependencies</h3>
+                        <p>Navigate to the project directory in a terminal and install libraries from `requirements.txt` (virtual environment recommended).</p>
                     </div>
                     <div class="card">
-                        <h3>User Engagement</h3>
-                        <p>Interactive tools including memes, translations, profiles, and reaction roles.</p>
+                        <h3>4. Create .env File</h3>
+                        <p>Create a `.env` file in the root directory with your bot token from the <a href="https://discord.com/developers/applications">Discord Developer Portal</a>.</p>
                     </div>
                     <div class="card">
-                        <h3>Multi-Guild Support</h3>
-                        <p>Customize settings per guild, such as NSFW content or moderation rules.</p>
+                        <h3>5. Configure Settings</h3>
+                        <p>Edit `config.py` to define role names (e.g., `MOD_ROLE`), owner ID (`OWNER_ID`), and other settings.</p>
                     </div>
                     <div class="card">
-                        <h3>Persistent Settings</h3>
-                        <p>Bot lock and DM states preserved across restarts using JSON storage.</p>
+                        <h3>6. Launch Locally</h3>
+                        <p>Run the bot from the terminal using Python to start it locally.</p>
+                    </div>
+                    <div class="card">
+                        <h3>7. Customize with Cogs</h3>
+                        <p>Add custom commands by placing Python cogs in the `cmds/` directory; manage them with `-load`, `-unload`, or `-reload`.</p>
+                    </div>
+                    <div class="card">
+                        <h3>8. Host 24/7</h3>
+                        <p>Use a VPS or hosting provider for continuous uptime.</p>
                     </div>
                 </div>
                 <a href="/DisWeb/index.html" class="btn btn-primary">Back to Home</a>
