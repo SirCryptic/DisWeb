@@ -67,7 +67,7 @@
                     </div>
                     <div class="card">
                         <h3>7. Host 24/7</h3>
-                        <p>Use a VPS or <a href="https://replit.com/">Replit</a> for persistent hosting.</p>
+                        <p>Use a VPS or Hosting provider for persistent hosting.</p>
                     </div>
                 </div>
                 <a href="/DisWeb/index.html" class="btn btn-primary">Back to Home</a>
@@ -79,5 +79,13 @@
             <p>Powered by <a href="https://github.com/sircryptic/disframe">DisFrame</a> © 2025</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.getElementById('nav-toggle');
+            toggle.addEventListener('change', () => {
+                document.querySelector('nav ul').style.transition = 'max-height 0.3s ease';
+            });
+        });
+    </script>
 </body>
 </html>
