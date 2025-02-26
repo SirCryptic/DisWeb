@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hosting Guide - DisFrame Bot</title>
     <meta property="og:title" content="Hosting Guide - DisFrame Bot" />
-    <meta property="og:description" content="Learn how to host your own DisFrame Discord bot with this step-by-step guide by SirCryptic." />
+    <meta property="og:description" content="A step-by-step guide to hosting your own DisFrame Discord bot, created by SirCryptic." />
     <meta property="og:image" content="https://repository-images.githubusercontent.com/922656232/2b3449ac-728f-4725-9a5c-31d18276abf0" />
     <meta property="og:url" content="https://sircryptic.github.io/DisWeb/pages/guide.html" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Hosting Guide - DisFrame Bot" />
-    <meta name="twitter:description" content="Learn how to host your own DisFrame Discord bot with this step-by-step guide by SirCryptic." />
+    <meta name="twitter:description" content="A step-by-step guide to hosting your own DisFrame Discord bot, created by SirCryptic." />
     <meta name="twitter:image" content="https://repository-images.githubusercontent.com/922656232/2b3449ac-728f-4725-9a5c-31d18276abf0" />
     <link rel="stylesheet" href="/DisWeb/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -36,42 +36,46 @@
     <header>
         <div class="container">
             <h1>Hosting Guide</h1>
-            <p>Run your own DisFrame bot instance</p>
+            <p>Set up and run your own DisFrame bot instance</p>
         </div>
     </header>
     <main>
         <section class="content">
             <div class="container">
                 <h2>Get Started with DisFrame</h2>
-                <p>Follow these steps to host your own Python-based Discord bot.</p>
+                <p>Follow these steps to host your own customizable Discord bot built with Python.</p>
                 <div class="card-grid">
                     <div class="card">
                         <h3>1. Prerequisites</h3>
-                        <p>Install <a href="https://www.python.org/downloads/">Python 3.8+</a> and <a href="https://git-scm.com/">Git</a>.</p>
+                        <p>Ensure you have <a href="https://www.python.org/downloads/">Python 3.8+</a> and <a href="https://git-scm.com/">Git</a> installed on your system.</p>
                     </div>
                     <div class="card">
-                        <h3>2. Download</h3>
-                        <p>Download DisFrame from <a href="https://github.com/sircryptic/disframe/archive/refs/heads/main.zip">GitHub</a>.</p>
+                        <h3>2. Clone the Repository</h3>
+                        <p>Download the DisFrame source code from <a href="https://github.com/sircryptic/disframe">GitHub</a> by cloning the repository.</p>
                     </div>
                     <div class="card">
-                        <h3>3. Setup</h3>
-                        <p>Unzip, open a terminal in the folder, and run:<br><code>pip install -r requirements.txt</code></p>
+                        <h3>3. Install Dependencies</h3>
+                        <p>Navigate to the project folder in a terminal and install required libraries from `requirements.txt` (virtual environment recommended).</p>
                     </div>
                     <div class="card">
-                        <h3>4. Configure</h3>
-                        <p>Create <code>config.py</code> with your bot token from the <a href="https://discord.com/developers/applications">Discord Developer Portal</a>:<br><code> "YOUR_BOT_TOKEN"</code></p>
+                        <h3>4. Create .env File</h3>
+                        <p>Create a `.env` file in the root directory with your bot token from the <a href="https://discord.com/developers/applications">Discord Developer Portal</a>.</p>
                     </div>
                     <div class="card">
-                        <h3>5. Launch</h3>
-                        <p>Run the bot:<br><code>python bot.py</code></p>
+                        <h3>5. Configure Settings</h3>
+                        <p>Edit `config.py` to set role names, owner ID, and other bot settings (token is managed via `.env`).</p>
                     </div>
                     <div class="card">
-                        <h3>6. Customize</h3>
-                        <p>Add cogs to <code>cmds/</code>. Use <code>load</code>, <code>unload</code>, or <code>reload</code> in Discord.</p>
+                        <h3>6. Launch the Bot</h3>
+                        <p>Start the bot using Python from the terminal—it will load the token from `.env` and begin operation.</p>
                     </div>
                     <div class="card">
-                        <h3>7. Host 24/7</h3>
-                        <p>Use a VPS or Hosting Provider for persistent hosting.</p>
+                        <h3>7. Customize with Cogs</h3>
+                        <p>Add custom commands by placing Python cogs in the `cmds/` directory; manage them dynamically with `-load`, `-unload`, or `-reload`.</p>
+                    </div>
+                    <div class="card">
+                        <h3>8. Host 24/7 (Optional)</h3>
+                        <p>Deploy on a VPS or hosting provider for continuous operation.</p>
                     </div>
                 </div>
                 <a href="/DisWeb/index.html" class="btn btn-primary">Back to Home</a>
